@@ -1,0 +1,83 @@
+body {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  padding: 1em;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  margin-block-end: 1em;
+  text-decoration: none;
+  color: var(--clr-secondary);
+}
+
+.brand__logo-wrapper {
+  max-width: 5em;
+}
+
+.brand__abbrev::after {
+  content: 'SANGGUNIANG KABATAAN';
+  font-weight: 900;
+}
+
+.brand__name::after {
+  content: 'TETUAN ONLINE PORTAL';
+  font-weight: 300  ;
+  color: #e90e0e;
+}
+
+.login-form {
+  max-width: 20em;
+  width: 100%;
+  border: 1px solid var(--clr-smoke);
+}
+
+.error-msg {
+  color: red;
+  font-size: 0.5rem;
+  margin-block-end: 0.3em;
+}
+
+.login-form__input {
+  padding: 2em;
+}
+
+.login-form__input > input {
+  display: block;
+  margin-block-end: 0.8em;
+  padding-block: 0.5em;
+}
+
+.login-form__title {
+  color: var(--clr-primary);
+  font-weight: 700;
+  font-size: 0.7rem;
+  padding: 0.2em 1em;
+  background-color: var(--clr-secondary);
+}
+
+.login-form__btn-login {
+  max-width: 7em;
+  width: 100%;
+
+  font-weight: 700;
+  color: var(--clr-primary);
+  background-color: var(--clr-secondary);
+  border: none;
+  cursor: pointer;
+}
+
+.login-form__btn-login:hover {
+  background-color: rgb(113, 115, 243);
+}
+
+.login-form__btn-login:active {
+  background-color: #e90e0e;;
+}
+
+/* utility */
+.w-80pct {
+  width: 80%;
+}

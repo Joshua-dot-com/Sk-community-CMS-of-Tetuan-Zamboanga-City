@@ -1,0 +1,505 @@
+.wrapper {
+    max-width: 1300px;
+    margin-inline: auto;
+    padding-inline: 1em;
+  }
+  
+  .nav-bar {
+    background-color: var(--clr-primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    border: solid rgb(25, 0, 255) 2px;
+  }
+  
+  a {
+  text-decoration: none;
+  }
+  
+  .nav-bar > .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  
+  .nav-bar__logo-wrapper {
+    display: grid;
+    grid-template: repeat(2, max-content) / repeat(2, max-content);
+    color: var(--clr-secondary);
+   
+  }
+  
+  .nav-bar__logo {
+    grid-row: 1/3;
+    max-width: 4em;
+  }
+  
+  .nav-bar__logo-abbrev {
+    align-self: end;
+  }
+  
+  .nav-bar__logo-abbrev::after {
+    content: 'SK TETUAN';
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+  
+  .nav-bar__logo-name::after {
+    content: 'Community Website';
+    font-weight: 300;
+    
+  }
+  
+  .nav-bar__logo-name {
+    color: var(--clr-secondary-lighter);
+  }
+  
+  .nav-link > * {
+    margin-inline-start: 1em;
+  }
+  
+  .nav-link {
+    color: var(--clr-secondary);
+  }
+  
+  .nav-link__about {
+    font-weight: 300;
+  }
+  
+  .nav-link__about:hover {
+    color: var(--clr-secondary-lighter);
+    text-decoration: none;
+  }
+  
+  .nav-link__explore {
+    padding: 0.5em 1em;
+    color: var(--clr-primary);
+    font-weight: 600;
+    border-radius: 5px;
+    background: blue;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .nav-link__explore:hover {
+    background:  red;
+    text-decoration: none;
+  }
+  .nav-link__explore:active {
+    background: linear-gradient(75deg, var(--clr-secondary), var(--clr-secondary-lighter), orange);
+  }
+  
+  
+  header {
+    padding-block: 4em;
+    
+  }
+  
+  .splash {
+    position: relative;
+    z-index: -1;
+    max-width: 1400px;
+    min-height: 600px;
+    margin-top: 115px;
+    overflow: hidden;
+  }
+  
+  .splash-inner {
+    display: flex;
+    animation: slide-right 60s infinite;
+  }
+  
+  @keyframes slide-right {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-300%); } /* Adjust percentage according to the number of images */
+  }
+  
+  .splash-image {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+  }
+  
+  
+  
+  
+  @media only screen and (max-width: 480px) {
+    .splash {
+      background-size: contain; /* Adjust background size for smaller screens */
+      min-height: 300px; /* Adjust minimum height for smaller screens */
+    }
+  }
+  
+  
+  .splash__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .splash__title,
+  .splash__subtitle {
+    color: var(--clr-primary);
+  }
+  
+  .splash__title {
+    max-width: 20ch;
+    font-weight: 900;
+  }
+  
+  .splash__subtitle {
+    font-weight: 300;
+  }
+  
+  
+  .about-us,
+  .about-us-content {
+    padding-inline-start: 1em;
+  }
+  
+  .about-us {
+    font-weight: 600;
+    color: var(--clr-secondary);
+  }
+  
+  .about-us-content {
+    font-weight: 300;
+    padding-block: 0.5em;
+    margin-block-end: 2em;
+    border-inline-start: 1px solid var(--clr-secondary);
+  }
+  
+  
+  .container {
+    width: 80%;
+    margin: 40px; /* Adjust based on preference */
+    max-width: 1200px; /* Similar to Bootstrap's container */
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px; /* Adjust the margin and padding based on your design */
+    margin-left: -15px;
+  }
+  
+  .col-md-4 {
+    width: 33.33333%; /* For a 3-column layout */
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+  }
+  
+  .card, .announcement-card {
+    /* Merging your custom styles with basic card styling */
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgb(47, 0, 255);
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .announcement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgb(236, 0, 0);
+    
+  }
+  
+  .card-img-top {
+    width: 100%;
+    border-top-left-radius: calc(0.25rem - 1px); /* Similar to Bootstrap's border-radius */
+    border-top-right-radius: calc(0.25rem - 1px);
+    height: 300px;
+    max-height: 400px;
+    border: 2px solid black;
+    
+  }
+  
+  .card-body {
+    padding: 16px;
+  }
+  
+  .card-title {
+    margin-bottom: 16px; /* Adjust based on your design */
+    font-size: 1.25rem; /* Example font size */
+    text-align: center;
+  }
+  
+  .card-text {
+    margin-bottom: 5px;
+    font-size: 18px; /* Example font size */
+  }
+  
+  .text-muted {
+    color: #6c757d; /* Bootstrap's .text-muted color */
+  }
+  
+  
+  .mb-4 {
+    margin-bottom: 1.5rem; 
+  }
+  
+  #mapid { 
+    height: 400px;
+    border: 2px solid #ccc;
+    position: relative; /* or static */
+    z-index: -1;
+    
+   }
+   .location-description {
+    margin-bottom: 20px;
+    padding: 10px;
+   
+  }
+  
+  .sk-member-card {
+    border: 1px solid #ccc;
+    width: 350px; /* Minimum width */
+    height: 600px; /* Minimum height */
+    max-width: 1000px; /* Maximum width */
+    max-height: 1000px; /* Maximum height */
+    padding: 10px;
+    background-color: #9194f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow: hidden; /* Ensure text doesn't overflow */
+  }
+  
+  /* Ensuring text wraps within the container */
+  .sk-member-card p {
+    word-break: break-all; /* Breaks text onto the next line if it overflows */
+    text-align: center; /* Optionally, align text in the center */
+  }
+  
+  
+  
+  .profile-picture {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 200px;
+    max-width: 200px;
+    max-height: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+  }
+  
+  
+  .member-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .member-info {
+    margin-bottom: 5px;
+  }
+  .skrow {
+    display: flex;
+    justify-content: center; /* Center the flex items horizontally */
+    flex-wrap: wrap; /* Allow the items to wrap to the next row */
+  }
+  
+  .col{
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+  .sk-members-container {
+    padding: 10px;
+    margin-left: -130px;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  .sk-members-container hr.separator {
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .sk-members-container h2 {
+    border-left: 5px solid #007bff; /* Adjust the border color and width as needed */
+    padding-left: 10px; /* Add padding to separate the text from the border */
+  }
+  
+  /* Main dropdown container */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Main dropdown button */
+  .dropbtn {
+    background-color: transparent;
+    color: rgb(22, 22, 22);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Dropdown content */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  /* Style for the logout button */
+  .dropdown-content input[type="submit"] {
+    background-color: transparent;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  /* Hover effect for logout button */
+  .dropdown-content input[type="submit"]:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show dropdown on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .adropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .adropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Show the dropdown content on hover */
+  .dropdown:hover .adropdown-content {
+    display: block;
+  }
+  
+  /* Show the dropdown content when the dropdown button is focused */
+  .dropbtn:focus + .adropdown-content {
+    display: block;
+  }
+  
+  /* Media query for tablets */
+  @media only screen and (max-width: 768px) {
+    .nav-bar__logo-wrapper {
+      display: flex;
+      flex-direction: column; /* Arrange the logo items vertically */
+      align-items: center;
+    }
+    
+    .nav-bar__logo {
+      max-width: 4em;
+    }
+    
+    .nav-bar__logo-abbrev::after,
+    .nav-bar__logo-name::after {
+      display: block; /* Ensure the content is displayed as block elements */
+      text-align: center; /* Center the text */
+      margin-bottom: 0.5em; /* Add some spacing between the abbreviation and the name */
+    }
+    
+    .nav-link__explore {
+      padding: 0.3em;
+      font-size: 0.8em;
+    }
+  }
+    
+   
+  @media only screen and (max-width: 480px) {
+    .nav-bar__logo-wrapper {
+      display: flex;
+      flex-direction: column; /* Arrange the logo items vertically */
+      align-items: center;
+  
+    }
+    
+    .nav-bar__logo {
+      max-width: 4em;
+    }
+    
+    .nav-bar__logo-abbrev::after,
+    .nav-bar__logo-name::after {
+      display: block; /* Ensure the content is displayed as block elements */
+      text-align: center; /* Center the text */
+      margin-bottom: 0.5em; /* Add some spacing between the abbreviation and the name */
+    }
+    
+    .nav-link__explore {
+      padding: 0.3em;
+      font-size: 0.8em;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .announcement-card {
+      width: 100%;
+      margin: 10px 0;
+      box-shadow: none;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      display: block;
+      
+    }
+  
+    .announcement-card .card-title {
+      font-size: 1.1rem; /* Adjust the font size of the title */
+      font-weight: bold; /* Make the title bold */
+      margin-bottom: 5px; /* Add some margin below the title */
+    }
+  
+    .announcement-card .card-text {
+      font-size: 0.9rem; /* Adjust the font size of the text */
+      margin-bottom: 5px; /* Add some margin below the text */
+    }
+  
+    .announcement-card .text-muted {
+      font-size: 0.8rem; /* Adjust the font size of the muted text */
+    }
+    
+    .col-md-4 {
+      width: 100%; /* For a 3-column layout */
+      padding-right: 15px;
+      padding-left: 15px;
+      box-sizing: border-box;
+    }
+  }
+  
+  
+  
+  /* Media query for phones */
+  @media only screen and (max-width: 480px) {
+    .nav-link__explore {
+      padding: 0.3em;
+      font-size: 0.8em;
+    }
+  }
+  

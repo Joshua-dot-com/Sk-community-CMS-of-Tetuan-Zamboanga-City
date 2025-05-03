@@ -1,0 +1,172 @@
+/* 
+    thin: 100
+    lighter: 300
+    regular: 400
+    bold: 700
+    black: 900
+*/
+
+/* 
+    I dunno how to encorporate root directory to this shit.
+    I'm just going to provide possible url for admin and normal users
+*/
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../assets/fonts/Lato/Lato-regular-webfont.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../assets/fonts/Lato/Lato-bold-webfont.woff') format('woff');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../assets/fonts/Lato/Lato-black-webfont.woff') format('woff');
+    font-style: normal;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../assets/fonts/Lato/Lato-light-webfont.woff') format('woff');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../assets/fonts/Lato/Lato-thin-webfont.woff') format('woff');
+    font-style: normal;
+    font-weight: 100;
+}
+
+
+/* #region italics */
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../assets/fonts/Lato/Lato-italic-webfont.woff') format('woff');
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../assets/fonts/Lato/Lato-bolditalic-webfont.woff') format('woff');
+    font-style: italic;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../assets/fonts/Lato/Lato-blackitalic-webfont.woff') format('woff');
+    font-style: italic;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../assets/fonts/Lato/Lato-lightitalic-webfont.woff') format('woff');
+    font-style: italic;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../assets/fonts/Lato/Lato-thinitalic-webfont.woff') format('woff');
+    font-style: italic;
+    font-weight: 100;
+}
+
+/* #endregion */
+
+
+/* #region Open sans */
+/* BEGIN Light */
+@font-face {
+    font-family: 'Open Sans';
+    src: url("./fonts/Open-Sans/Light/OpenSans-Light.woff2") format("woff2"), url("./fonts/Open-Sans/Light/OpenSans-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+  }
+  /* END Light */
+  /* BEGIN Light Italic */
+  @font-face {
+    font-family: 'Open Sans';
+    src: url("./fonts/Open-Sans/LightItalic/OpenSans-LightItalic.woff2") format("woff2"), url("./fonts/Open-Sans/LightItalic/OpenSans-LightItalic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic;
+  }
+  /* END Light Italic */
+  /* BEGIN Regular */
+  @font-face {
+    font-family: 'Open Sans';
+    src: url("./fonts/Open-Sans/Regular/OpenSans-Regular.woff2") format("woff2"), url("./fonts/Open-Sans/Regular/OpenSans-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  /* END Regular */
+  /* BEGIN Italic */
+  @font-face {
+    font-family: 'Open Sans';
+    src: url("./fonts/Open-Sans/Italic/OpenSans-Italic.woff2") format("woff2"), url("./fonts/Open-Sans/Italic/OpenSans-Italic.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+  }
+  /* END Italic */
+  /* BEGIN Semibold */
+  @font-face {
+    font-family: 'Open Sans';
+    src: url("./fonts/Open-Sans/Semibold/OpenSans-Semibold.woff2") format("woff2"), url("./fonts/Open-Sans/Semibold/OpenSans-Semibold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+  }
+  /* END Semibold */
+  /* BEGIN Semibold Italic */
+  @font-face {
+    font-family: 'Open Sans';
+    src: url("./fonts/Open-Sans/SemiboldItalic/OpenSans-SemiboldItalic.woff2") format("woff2"), url("./fonts/Open-Sans/SemiboldItalic/OpenSans-SemiboldItalic.woff") format("woff");
+    font-weight: 600;
+    font-style: italic;
+  }
+  /* END Semibold Italic */
+  /* BEGIN Bold */
+  @font-face {
+    font-family: 'Open Sans';
+    src: url("./fonts/Open-Sans/Bold/OpenSans-Bold.woff2") format("woff2"), url("./fonts/Open-Sans/Bold/OpenSans-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+  }
+  /* END Bold */
+  /* BEGIN Bold Italic */
+  @font-face {
+    font-family: 'Open Sans';
+    src: url("./fonts/Open-Sans/BoldItalic/OpenSans-BoldItalic.woff2") format("woff2"), url("./fonts/Open-Sans/BoldItalic/OpenSans-BoldItalic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+  }
+  /* END Bold Italic */
+  /* BEGIN Extrabold */
+  @font-face {
+    font-family: 'Open Sans';
+    src: url("./fonts/Open-Sans/ExtraBold/OpenSans-ExtraBold.woff2") format("woff2"), url("./fonts/Open-Sans/ExtraBold/OpenSans-ExtraBold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+  }
+  /* END Extrabold */
+  /* BEGIN Extrabold Italic */
+  @font-face {
+    font-family: 'Open Sans';
+    src: url("./fonts/Open-Sans/ExtraBoldItalic/OpenSans-ExtraBoldItalic.woff2") format("woff2"), url("./fonts/Open-Sans/ExtraBoldItalic/OpenSans-ExtraBoldItalic.woff") format("woff");
+    font-weight: 800;
+    font-style: italic;
+  }
+  /* END Extrabold Italic */
+
+/* #endregion */

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Hotlines</title>
+    <!-- Add Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-J6qa7Fq1IeK+8ux6s9Ti7A0C0KnfJf/GaO+qNSlOK3K2RvnhV+55Zf5mgaE+p2xX" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        .floating-back-btn {
+      position: fixed;
+      top: 20px; /* Adjust as needed */
+      left: 20px; /* Adjust as needed */
+      z-index: 999; /* Adjust as needed */
+    }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+            background-image: url('../assets/img/emergency.png'); 
+            background-size: cover; 
+            background-position: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #3c3b3b;
+            
+        }
+        .department {
+            margin-bottom: 20px;
+        }
+        .department h2 {
+            color: #ff0c0c;
+            border-bottom: 2px solid #ff5d5d;
+            padding-bottom: 10px;
+        }
+        .department table {
+            margin-top: 10px;
+        }
+        .emergency-icon {
+            color: #007bff;
+            margin-right: 10px;
+        }
+        th {
+color: white;
+        }    
+    </style>
+</head>
+<body>
+    <a href="landing.php" class="btn btn-primary floating-back-btn">
+        <i class="fas fa-arrow-circle-left" style="color: black;"></i>
+      </a>
+
+<div class="container">
+    <h1>Emergency Hotlines</h1>
+
+    <!-- Department: BFP HOTLINE -->
+    <div class="department">
+        <h2><i class="fas fa-fire emergency-icon"></i> BFP HOTLINE</h2>
+        <table>
+            <tr>
+                <th>Service</th>
+                <th>&nbsp;&nbsp;&nbsp;&nbsp;Hotline Number</th>
+            </tr>
+            <tr>
+                <td>Fire Emergency</td>
+                <td>117 or (02) 426-0219</td>
+            </tr>
+            <!-- Add more fire department hotlines as needed -->
+        </table>
+    </div>
+
+    <!-- Department: POLICE HOTLINE -->
+    <div class="department">
+        <h2><i class="fas fa-user-shield emergency-icon"></i> POLICE HOTLINE</h2>
+        <table>
+            <tr>
+                <th>Service</th>
+                <th>Hotline Number</th>
+            </tr>
+            <tr>
+                <td>Police Emergency</td>
+                <td>911 or (02) 723-0401</td>
+            </tr>
+            <!-- Add more police department hotlines as needed -->
+        </table>
+    </div>
+
+    <!-- Department: EMERGENCY HOTLINE -->
+    <div class="department">
+        <h2><i class="fas fa-ambulance emergency-icon"></i> EMERGENCY HOTLINE</h2>
+        <table>
+            <tr>
+                <th>Service</th>
+                <th>Hotline Number</th>
+            </tr>
+            <tr>
+                <td>Medical Emergency</td>
+                <td>911 or (02) 8820-2246</td>
+            </tr>
+            <!-- Add more emergency hotlines as needed -->
+        </table>
+    </div>
+
+</div>
+
+</body>
+</html>

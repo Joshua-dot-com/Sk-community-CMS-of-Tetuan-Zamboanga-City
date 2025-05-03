@@ -1,0 +1,62 @@
+
+    /* Flexbox container for navbar and content */
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /* User container and status container styling */
+    .content-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap; /* Allow containers to wrap if the screen is too small */
+        margin-bottom: 20px; /* Add margin bottom to create space between containers and footer */
+    }
+
+    .user-container,
+    .status-container {
+        flex: 1; /* Take up equal space */
+        margin: 0 10px; /* Adjust spacing between containers */
+    }
+
+    /* Styling for user container */
+    .user_card {
+        width: 100%; /* Full width */
+        border: 1px solid #ddd; /* Border for visual separation */
+        border-radius: 5px; /* Rounded corners */
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add shadow for depth */
+        margin-bottom: 20px; /* Add margin bottom to create space between user container and status container */
+    }
+
+    .user-header {
+        background-color: #f0f0f0; /* Header background color */
+        padding: 10px;
+        border-bottom: 1px solid #ddd; /* Border bottom for header */
+        border-radius: 5px 5px 0 0; /* Rounded top corners */
+    }
+
+    .user-body {
+        padding: 10px;
+    }
+
+    /* Styling for status container */
+    .status {
+        width: 100%; /* Full width */
+        border: 1px solid #ddd; /* Border for visual separation */
+        border-radius: 5px; /* Rounded corners */
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add shadow for depth */
+    }
+
+    .status-header {
+        background-color: #f0f0f0; /* Header background color */
+        padding: 10px;
+        border-bottom: 1px solid #ddd; /* Border bottom for header */
+        border-radius: 5px 5px 0 0; /* Rounded top corners */
+    }
+
+    .status-body {
+        padding: 10px;
+    }

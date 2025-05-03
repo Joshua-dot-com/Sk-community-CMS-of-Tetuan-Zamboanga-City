@@ -1,0 +1,81 @@
+/* #region CSS RESET */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+/* #endregion */
+
+
+/* #region GLOBAL CSS */
+:root {
+  --clr-primary: white;
+  --clr-smoke: rgb(220, 220, 220);
+  --clr-secondary:rgb(50, 20, 220);
+  --clr-secondary-lighter: red;
+  --clr-secondary-darker: rgb(150, 10, 40);
+  --clr-accent: #343a40;
+  --clr-success: #2cff02;
+  --clr-warning: #ffa600;
+  --clr-error: red;
+  --clr-extra: #17a2b8;
+  --clr-extra-lighter: #00ddff;
+  --clr-extra-darker: #1f8494;
+
+  --bx-shadow-primary: rgba(255, 0, 0, 0.2) 0px 2px 8px 0px;
+}
+
+/* font size for screen width greater than 720px */
+@media only screen and (min-width: 721px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+body {
+  font-family: 'Open Sans', serif;
+}
+
+/* #endregion */
+

@@ -1,0 +1,236 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    display: block;
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 5em;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin-inline: auto;
+  padding-inline: 1em;
+}
+
+.brand__logo-wrapper {
+  display: grid;
+  grid-template: repeat(2, max-content) / repeat(2, max-content);
+  color: var(--clr-secondary);
+  text-decoration: none;
+}
+
+
+.brand__logo {
+  grid-row: 1/3;
+  max-width: 10em;
+}
+
+.brand__logo-abbrev {
+  align-self: end;
+}
+
+.brand__logo-abbrev::after {
+  content: 'SK Tetuan';
+  font-weight: 900;
+  font-size: 4.5rem;
+}
+
+.brand__logo-name::after {
+  content: 'Community website';
+  font-weight: 300;
+}
+
+
+
+.login {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+.login__error-msg {
+  color: red;
+  font-size: 0.7rem;
+}
+
+.login__account-created,
+.login__recovery-feedback,
+.login__account-update {
+  color: var(--clr-extra);
+  font-size: 0.7rem;
+}
+
+.login > h3 {
+  margin-block-end: 1em;
+}
+
+.login > input {
+  font-size: inherit;
+  padding: 0.5em;
+  border: none;
+  background: none;
+  border-block-end: 1px solid var(--clr-secondary);
+  margin-block: 0.5em;
+}
+
+.login__btn,
+.login__btn:active {
+  background: var(--clr-secondary);
+}
+
+.login__btn {
+  font-size: inherit;
+  color: var(--clr-primary);
+  border: none;
+  padding-block: 0.4em;
+  cursor: pointer;
+}
+
+.login__btn:hover {
+  background-color: var(--clr-secondary-lighter);
+}
+
+.login__title,
+.login__subtitle {
+  color: var(--clr-secondary);
+}
+
+.login__title {
+  font-weight: 700;
+}
+
+.login__subtitle {
+  font-weight: 300;
+}
+
+.login__forgot-pass {
+  margin-block-end: 2em;
+  color: var(--clr-accent);
+}
+
+.login__sign-up-here {
+  color: var(--clr-extra);
+}
+
+.email-exist-err,
+.recover__error-msg {
+  font-size: 0.7rem;
+  color: red;
+}
+
+.radio-group {
+  display: inline-block;
+  margin-right: 10px; /* Adjust this value as needed */
+}
+.login__title {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.login__subtitle {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #666;
+}
+
+.login__input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login__btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login__btn:hover {
+  background-color: #0056b3;
+}
+
+/* Additional styles for the modal */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px; /* Location of the box */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  border-radius: 10px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.submit {
+  /* styles unchanged */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.submit:disabled {
+  /* Additional styles for disabled state */
+  background-color: #CCCCCC; /* Grey */
+  cursor: not-allowed; /* Change cursor to not-allowed when button is disabled */
+}
+
+.submit:disabled:hover {
+  /* Additional styles for disabled state when hovered */
+  background-color: #faf7f7; /* Maintain grey color on hover when disabled */
+}
+
+.submit:hover {
+  background-color: #0056b3;
+}
